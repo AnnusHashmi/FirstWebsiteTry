@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="Assets/JavaScript/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="Assets/JavaScript/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="Assets/JavaScript/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <!-- logo -->
+    <img src="images/hello.jfif" alt="" style="height: 50px">
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#features">features</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="#form">Registrations</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Countries
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Pakistan</a>
+          <a class="dropdown-item" href="#">UAE</a>
+          <a class="dropdown-item" href="#">Australia</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!--This is the carosal-->
+  <div class="container">
+      <div id="home" style="padding: 30px 20px">
+          <h2>HOME</h2>
+          <p class="alert alert-secondary">This is the main home page!</p>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>       
+
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active align-carosal">
+                <img src="./images/course02.jpg" alt="Los Angeles" width="1000" height="500">
+                <div class="carousel-caption">
+                  <h3>Picture 1</h3>
+                  <p>Picture one is perfect</p>
+                </div>   
+              </div>
+              <div class="carousel-item align-carosal">
+                <img src="./images/course05.jpg" alt="Chicago" width="1000" height="500">
+                <div class="carousel-caption">
+                  <h3>Seacond picture is great</h3>
+                  <p>Thank you, lets just add some caption</p>
+                </div>   
+              </div>
+              <div class="carousel-item align-carosal">
+                <img src="./images/course04.jpg" alt="New York" width="1000" height="500">
+                <div class="carousel-caption">
+                  <h3>The best</h3>
+                  <p>And this is how we do stuff</p>
+                </div>   
+              </div>
+              <div class="carousel-item align-carosal">
+                <img src="./images/course06.jpg" alt="Chicago" width="1000" height="500">
+                <div class="carousel-caption">
+                  <h3>Seacond picture is great</h3>
+                  <p>Thank you, lets just add some caption</p>
+                </div>   
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+      
+        </div>
+  </div>
+
+<!--This section is about the features-->
+  <div class="container" style="margin-top: 50px" id="features">
+    <div style="text-align: center">
+      <h2>People Behind</h2>
+      <p class="alert alert-secondary">This section is made to tell you about the people that have worked for us and made sure that we<br />  are able
+        to dilver our work on the time and maintain the quality that is expected from our customers.</p>
+        
+         <div class="card" style="width: 300px">
+           <img src="./images/me.jpg" style="width: 200px; margin-left: 55px" class="rounded-circle" >
+           <div class="card-body">
+             <div class="card-title"><b>Annus Hashmi</b></div>
+             <div class="card-text">This is no one but me! hehehe</div>
+             <a href="https://www.facebook.com/annus.hashmi" class="btn btn-primary" style="margin-top: 10px">See Profile</a>
+           </div>
+         </div>
+    </div>
+
+    </div>
+
+    <!--This is a form!-->
+
+<div class="container"  style="margin-top: 70px" id="form">
+    <h2>REGISTRATIONS</h2>
+    <p>We would like to keep in touch with you. Feel proud with our customers and we belive in creating a healty bond with them!</p>
+    <form class="form-horizontal form-style">
+
+      <div class="form-group">
+        <label for="FullName" class="col-sm-2">Full Name: </label>
+        <div class="col-sm-12">
+          <input type="email" class="form-control" placeholder="Enter your name..">
+        </div>
+      </div>
+  
+      <div class="form-group">
+          <label for="email" class="col-sm-2">email: </label>
+          <div class="col-sm-12">
+            <input type="email" class="form-control" placeholder="Enter your email..">
+          </div>
+        </div>
+  
+      <div class="form-group">
+          <label for="contact Number" class="col-sm-2">Contact Number: </label>
+          <div class="col-sm-12">
+           <input type="contact Number" class="form-control" placeholder="Enter your Contact Number..">
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-sm-3">
+            <div class="checkbox">
+                <label><input type="checkbox">Send me regular offers through my email!</label>
+              </div>
+            </div>
+        </div>
+       
+      
+      
+    </form>
+  </div>
+
+
+<!--This is the Footer-->
+      <div class="footer font-weight-bolder ">
+        <p>This is the Footer!</p>
+        <p>WE GET THINGS DONE FOR YOU!</p>
+        <div>
+            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i>
+
+        </div>
+     
+      </div>
+
+  
+  
+</body>
+</html>
